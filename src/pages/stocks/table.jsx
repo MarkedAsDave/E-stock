@@ -79,3 +79,8 @@ export default function Table({ products, updateProductQuantity, setProducts }) 
     </table>
   );
 }
+
+// Providing a default value for setProducts to avoid errors
+Table.defaultProps = {
+  setProducts: () => {}
+};
