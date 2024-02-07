@@ -23,20 +23,21 @@ const CardA = ({Atitle}) => {
       <div className="main-text">Today's Sales</div>
       <div className="aitemContainer">
         <ul className="item-list">
-          {sortedProducts.map((product) => (
-            <li className="item-list" key={product.name}>
-              {product.modifiedQuantity >= 1 && (
-                <div className="aitem">
-                  <div className="aitem-a">
-                    <p>{product.productName}</p>
-                  </div> 
-                  <div className="aitem-q">
-                    <p>{product.modifiedQuantity}</p>
-                  </div>
-                </div>
-              )}
-            </li>
-          ))}
+        {sortedProducts.map((product, index) => (
+          <li className="item-list" key={index}>
+          {product.modifiedQuantity >=  1 && (
+          <div className="aitem">
+        <div className="aitem-a">
+          <p>{product.productName}</p>
+        </div>  
+        <div className="aitem-q">
+          <p>{product.modifiedQuantity}</p>
+        </div>
+      </div>
+    )}
+  </li>
+))}
+
         </ul>
       </div>
       <img src={cartcon} className="cart_main" /> 
