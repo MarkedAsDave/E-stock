@@ -3,7 +3,7 @@ import "@fontsource/inter";
 import React, { useState } from 'react';
 import ProductTable from './table';
 import { isWithinInterval, addWeeks } from 'date-fns';
-import EmployeeSidebar from '../../EmployeeSidebar';
+import EmployeeSidebar from '../../EmployeeSidebar';  
 
 export default function EmpLogs() {
   const [showModal, ] = useState(false);

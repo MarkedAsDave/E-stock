@@ -5,8 +5,6 @@ import './styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
-
-
 export default function AddProductModal({ showModal, handleCloseModal, addProduct }) {
 
   const [productName, setProductName] = useState('');
@@ -72,12 +70,12 @@ export default function AddProductModal({ showModal, handleCloseModal, addProduc
         <div className='modal' onClick={(e) => e.stopPropagation()}>
 
           <div className='modal-content'>
-            {/*<div className='modal-header'>
+            <div className='modal-header'>
               <h2>Add Product</h2>
               <button className='close-modal-button' onClick={handleCloseModal}>
                 &times;
               </button>
-             </div>*/}
+             </div>
 
             <div className='form'>
               <form onSubmit={handleSubmit}>

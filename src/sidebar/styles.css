@@ -9,7 +9,6 @@
     align-items: right;
     flex-direction: column;
   }
-  
   .button-container {
     width: 10px;
     height: auto;
@@ -19,18 +18,14 @@
     align-items: right center;
     flex: 1;
     margin: 5rem 0.5rem;
-    
   }
-  
   .link {
     text-decoration: none;
     color: inherit;
   }
-  
   .button-text {
     margin-left: 10px;
   }
-  
   .button {
     font-size: 1.2rem;
     font-weight: bold;
@@ -44,46 +39,39 @@
     color: #060E3B;
     text-decoration: none;  
   }
-  
   .button:hover {
     background-color: #ffffff;
   }
-  
   .dash_main{
     width: 20px;
     height: 20px;
     align-items: center;
     display: flex;
   }
-  
   .stocks_main{
     width: 25px;
     height: 23px;
     align-items: center;
     
   }
-  
   .logs_main{
     width: 25px;
     height: 23px;
     align-items: center;
     display: flex;
   }
-  
   .log_main{
     width: 23px;
     height: 23px;
     align-items: center;
     display: flex;
   }
-  
   .logo_img{
     width: 200px;
     height: 80px;
     margin: 20px;
     margin-bottom: auto;
   }
-  
   .photo_img{
     display: flex;
     position: fixed;
@@ -92,7 +80,6 @@
     height: 200px;
     margin: 20px;
     align-content: flex-end;
-  
     }
   
   
