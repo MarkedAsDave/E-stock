@@ -18,7 +18,7 @@ const CardA = ({Atitle}) => {
 
   return (
     <div className="Carda-main">
-      <img src={cartcon} alt=" Cart" className="cart_main"/> 
+
       <div className="main-title">{Atitle}</div>
       <div className="main-text">Today's Sales</div>
       <div className="aitemContainer">
