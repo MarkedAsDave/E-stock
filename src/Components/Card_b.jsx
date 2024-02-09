@@ -1,7 +1,7 @@
 import React from "react";
 
 const CardB = ({Btitle})  => {
-  // const Products = JSON.parse(localStorage.getItem("products")) || []; // get stored products from local storage, default to empty array if null
+  const Products = JSON.parse(localStorage.getItem("products")) || []; // get stored products from local storage, default to empty array if null
   
   return (
     <div className="Cardb-main"> 
@@ -9,7 +9,7 @@ const CardB = ({Btitle})  => {
       <div className="cardt-text">Available Products</div>
       <div className="itemContainer">
       <ul className="bitem-list">
-      {/* {Products.map((product, index) => (
+      {Products.map((product, index) => (
         <li className="bitem" key={index}>
            
             <div className="pname-div">
@@ -22,7 +22,7 @@ const CardB = ({Btitle})  => {
               </div>
            
           </li>
-        ))} */}
+        ))}
       </ul>
       </div>
     </div>

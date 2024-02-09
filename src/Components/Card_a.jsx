@@ -2,19 +2,19 @@ import React from "react";
 import cartcon from '../images/cart.png'
 
 const CardA = ({Atitle}) => {
-  // const Products = JSON.parse(localStorage.getItem("products")) || [];
+  const Products = JSON.parse(localStorage.getItem("products")) || [];
 
-  // const calculateQuantityDiff = (product) => {
-  //   return product.originalQuantity - product.quantity;
-  // }
+  const calculateQuantityDiff = (product) => {
+    return product.originalQuantity - product.quantity;
+  }
 
-  // const sortedProducts = Products.map((product) => {
-  //   return {
-  //     ...product,
-  //     modifiedQuantity: calculateQuantityDiff(product),
-  //     modified: new Date(product.modifiedDate).getTime()
-  //   };
-  // }).sort((a, b) => b.modifiedQuantity - a.modifiedQuantity);
+  const sortedProducts = Products.map((product) => {
+    return {
+      ...product,
+      modifiedQuantity: calculateQuantityDiff(product),
+      modified: new Date(product.modifiedDate).getTime()
+    };
+  }).sort((a, b) => b.modifiedQuantity - a.modifiedQuantity);
 
   return (
     <div className="Carda-main">
@@ -23,7 +23,7 @@ const CardA = ({Atitle}) => {
       <div className="main-text">Today's Sales</div>
       <div className="aitemContainer">
         <ul className="item-list">
-        {/* {sortedProducts.map((product, index) => (
+        {sortedProducts.map((product, index) => (
           <li className="item-list" key={index}>
           {product.modifiedQuantity >=  1 && (
           <div className="aitem">
@@ -36,7 +36,7 @@ const CardA = ({Atitle}) => {
       </div>
     )}
   </li>
-))} */}
+))}
 
         </ul>
       </div>

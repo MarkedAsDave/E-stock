@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactDOM from 'react-dom/client'; 
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import App from './App';
 import Dashboard from './pages/dashboard';
 import Stocks from './pages/stocks';
@@ -12,7 +12,7 @@ import Logs from './pages/loggs';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/">   
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Stocks" element={<Stocks />} />
